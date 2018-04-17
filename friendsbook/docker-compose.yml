@@ -1,0 +1,11 @@
+version: "2.1"
+
+services:
+  friendsbook:
+    image: fb_image
+    container_name: fb_container
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 8090:8080

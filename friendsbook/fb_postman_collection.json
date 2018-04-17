@@ -1,0 +1,131 @@
+{
+	"variables": [],
+	"info": {
+		"name": "fb_postman_collection",
+		"_postman_id": "9199cf54-22a4-e042-7e49-4c62f7017227",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://192.168.99.100:8090/connect",
+			"request": {
+				"url": "http://192.168.99.100:8090/connect",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"friends\":\r\n    [\r\n      \"andy@example.com\",\r\n      \"john@example.com\"\r\n    ]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.99.100:8090/retrieve",
+			"request": {
+				"url": "http://192.168.99.100:8090/retrieve",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"andy@example.com\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.99.100:8090/retrieveCommon",
+			"request": {
+				"url": "http://192.168.99.100:8090/retrieveCommon",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"friends\":\r\n    [\r\n      \"tim@example.com\",\r\n      \"john@example.com\"\r\n    ]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.99.100:8090/subscribe",
+			"request": {
+				"url": "http://192.168.99.100:8090/subscribe",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestor\": \"lisa@example.com\",\r\n  \"target\": \"john@example.com\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.99.100:8090/block",
+			"request": {
+				"url": "http://192.168.99.100:8090/block",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"requestor\": \"andy@example.com\",\r\n  \"target\": \"john@example.com\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.99.100:8090/eligible",
+			"request": {
+				"url": "http://192.168.99.100:8090/eligible",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sender\":  \"john@example.com\",\r\n  \"text\": \"Hello World! kate@example.com\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
